@@ -17,5 +17,6 @@ class Manager:
             self.veiculos.remove(veiculo)
             
             
-    def listar_veiculos (self):
-        return [veiculo.exibir_informacoes() for veiculo in self.veiculos]
+    def listar_veiculos (self, cliente):
+        for veiculo in self.veiculos:
+            print(veiculo.exibir_adquiridos(cliente))

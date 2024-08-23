@@ -37,6 +37,9 @@ class Vehicles(ABC):
     
     def exibir_informacoes(self):
         pass
+    
+    def exibir_adquiridos(self):
+        pass
 
 
     def mostrar_tabela(self):

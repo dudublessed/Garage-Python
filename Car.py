@@ -36,8 +36,24 @@ class Carro (Vehicles):
                 f"Autonomia: {self.calcular_autonomia()} km \n"
                 f"Custo operacional: R$ {self.calcular_custo_operacional()} \n"                               
                 f" \n"
-                f"_______________\n"
-                f" \n")
+                f"_______________\n")
+
+
+    def exibir_adquiridos(self, cliente):
+        print(" ")
+        print("_______________")
+        print(" ")
+        return (f"{self._marca} {self._modelo} de {cliente.nome}: \n"
+                f" \n"
+                f"Fabricação: {self._ano} \n"
+                f"Combustível: {self._combustivel} litros \n"
+                f"Quilometragem: {self._quilometragem} km \n"
+                f"Custo: R$ {self._custo} \n"
+                f"Capacidade da Mala: {self._capacidade_mala} litros \n"
+                f"Autonomia: {self.calcular_autonomia()} km \n"
+                f"Custo operacional: R$ {self.calcular_custo_operacional()} \n"                               
+                f" \n"
+                f"_______________\n")
         
 
 # Modelos de Carro

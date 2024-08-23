@@ -61,11 +61,32 @@ class Caminhao (Vehicles):
                 f"Autonomia: {self.calcular_autonomia()} km \n"
                 f"Custo operacional: R$ {self.calcular_custo_operacional()} \n"                         
                 f" \n"
-                f"_______________\n"
-                f" \n")
+                f"_______________\n")
+
+
+    def exibir_adquiridos(self, cliente):
+        print(" ")
+        print("_______________")
+        print(" ")
+        return (f"{self._marca} {self._modelo} de {cliente.nome}: \n"
+                f" \n"
+                f"Fabricação: {self._ano} \n"
+                f"Combustível: {self._combustivel} litros \n"
+                f"Quilometragem: {self._quilometragem} km \n"
+                f"Custo: R$ {self._custo} \n"
+                f"Peso Vazio: {self._peso} kg \n"
+                f"Peso Atual: {self.calcular_peso_atual()} kg \n"
+                f"Peso Máximo: {self.calcular_peso_maximo()} kg \n"
+                f"Número de eixos: {self._numero_eixos} \n"
+                f"Capacidade de eixo: {self._capacidade_eixo} kg \n"
+                f"Capacidade de Carga: {self.calcular_carga_maxima()} litros \n"    
+                f"Autonomia: {self.calcular_autonomia()} km \n"
+                f"Custo operacional: R$ {self.calcular_custo_operacional()} \n"                         
+                f" \n"
+                f"_______________\n")
         
 
-# Modelos de Moto
+# Modelos de Caminhao
 
 Mercedes = [
     # Marca / Modelo / Ano / Combustível / Quilometragem / Custo / Peso / Capacidade de Carga / Numero de Eixos / Capacidade de Eixo

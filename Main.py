@@ -12,7 +12,7 @@ if __name__ == "__main__":
     gerenciador = Manager()
     
     # Generates a random value of the user money
-    nubank = random.randint(25000, 100000000)
+    nubank = random.randint(25000, 10000000)
     itau = random.randint(25000, 3000000)
     bradesco = random.randint(25000, 9000000)
     santander = random.randint(25000, 5000000)
@@ -91,10 +91,7 @@ if __name__ == "__main__":
                         model_chosen = input(f"Qual modelo de {brand_chosen} você deseja adquirir? \n")
                         for carro in Porsche:
                             if model_chosen.lower() == carro._modelo.lower():
-                                print(carro.exibir_informacoes())
-                                cliente.adquirir_veiculo(carro)
-                                gerenciador.adicionar_veiculo(carro)
-                                gerenciador.listar_veiculos()
+                                cliente.adquirir_veiculo(carro, gerenciador)
                                 break
                         else:
                             print("Modelo não encontrado, por favor tente novamente.")
@@ -109,10 +106,7 @@ if __name__ == "__main__":
                         model_chosen = input(f"Qual modelo de {brand_chosen} você deseja adquirir? \n")
                         for carro in Toyota:
                             if model_chosen.lower() == carro._modelo.lower():
-                                print(carro.exibir_informacoes())
-                                cliente.adquirir_veiculo(carro)
-                                gerenciador.adicionar_veiculo(carro)
-                                gerenciador.listar_veiculos()
+                                cliente.adquirir_veiculo(carro, gerenciador)
                                 break
                         else:
                             print("Modelo não encontrado, por favor tente novamente.")
@@ -127,10 +121,7 @@ if __name__ == "__main__":
                         model_chosen = input(f"Qual modelo de {brand_chosen} você deseja adquirir? \n")
                         for carro in Ferrari:
                             if model_chosen.lower() == carro._modelo.lower():
-                                print(carro.exibir_informacoes())
-                                cliente.adquirir_veiculo(carro)
-                                gerenciador.adicionar_veiculo(carro)
-                                gerenciador.listar_veiculos()
+                                cliente.adquirir_veiculo(carro, gerenciador)
                                 break
                         else:
                             print("Modelo não encontrado, por favor tente novamente.")
@@ -145,10 +136,7 @@ if __name__ == "__main__":
                         model_chosen = input(f"Qual modelo de {brand_chosen} você deseja adquirir? \n")
                         for carro in Nissan:
                             if model_chosen.lower() == carro._modelo.lower():
-                                print(carro.exibir_informacoes())
-                                cliente.adquirir_veiculo(carro)
-                                gerenciador.adicionar_veiculo(carro)
-                                gerenciador.listar_veiculos()
+                                cliente.adquirir_veiculo(carro, gerenciador)
                                 break
                         else:
                             print("Modelo não encontrado, por favor tente novamente.")
@@ -163,10 +151,7 @@ if __name__ == "__main__":
                         model_chosen = input(f"Qual modelo de {brand_chosen} você deseja adquirir? \n")
                         for carro in Audi:
                             if model_chosen.lower() == carro._modelo.lower():
-                                print(carro.exibir_informacoes())
-                                cliente.adquirir_veiculo(carro)
-                                gerenciador.adicionar_veiculo(carro)
-                                gerenciador.listar_veiculos()
+                                cliente.adquirir_veiculo(carro, gerenciador)
                                 break
                         else:
                             print("Modelo não encontrado, por favor tente novamente.")
@@ -181,10 +166,7 @@ if __name__ == "__main__":
                         model_chosen = input(f"Qual modelo de {brand_chosen} você deseja adquirir? \n")
                         for carro in Hyundai:
                             if model_chosen.lower() == carro._modelo.lower():
-                                print(carro.exibir_informacoes())
-                                cliente.adquirir_veiculo(carro)
-                                gerenciador.adicionar_veiculo(carro)
-                                gerenciador.listar_veiculos()
+                                cliente.adquirir_veiculo(carro, gerenciador)
                                 break
                         else:
                             print("Modelo não encontrado, por favor tente novamente.")
@@ -208,10 +190,7 @@ if __name__ == "__main__":
                         model_chosen = input(f"Qual modelo de {brand_chosen} você deseja adquirir? \n")
                         for moto in BMW:
                             if model_chosen.lower() == moto._modelo.lower():
-                                print(moto.exibir_informacoes())
-                                cliente.adquirir_veiculo(moto)
-                                gerenciador.adicionar_veiculo(moto)
-                                gerenciador.listar_veiculos()
+                                cliente.adquirir_veiculo(moto, gerenciador)
                                 break
                         else:
                             print("Modelo não encontrado, por favor tente novamente.")
@@ -225,10 +204,7 @@ if __name__ == "__main__":
                         model_chosen = input(f"Qual modelo de {brand_chosen} você deseja adquirir? \n")
                         for moto in Yamaha:
                             if model_chosen.lower() == moto._modelo.lower():
-                                print(moto.exibir_informacoes())
-                                cliente.adquirir_veiculo(moto)
-                                gerenciador.adicionar_veiculo(moto)
-                                gerenciador.listar_veiculos()
+                                cliente.adquirir_veiculo(moto, gerenciador)
                                 break
                         else:
                             print("Modelo não encontrado, por favor tente novamente.")
@@ -242,10 +218,7 @@ if __name__ == "__main__":
                         model_chosen = input(f"Qual modelo de {brand_chosen} você deseja adquirir? \n")
                         for moto in Kawasaki:
                             if model_chosen.lower() == moto._modelo.lower():
-                                print(moto.exibir_informacoes())
-                                cliente.adquirir_veiculo(moto)
-                                gerenciador.adicionar_veiculo(moto)
-                                gerenciador.listar_veiculos()
+                                cliente.adquirir_veiculo(moto, gerenciador)
                                 break
                         else:
                             print("Modelo não encontrado, por favor tente novamente.")
@@ -269,10 +242,7 @@ if __name__ == "__main__":
                         model_chosen = input(f"Qual modelo de {brand_chosen} você deseja adquirir? \n")
                         for caminhao in Mercedes:
                             if model_chosen.lower() == caminhao._modelo.lower():
-                                print(caminhao.exibir_informacoes())
-                                cliente.adquirir_veiculo(caminhao)
-                                gerenciador.adicionar_veiculo(caminhao)
-                                gerenciador.listar_veiculos()
+                                cliente.adquirir_veiculo(caminhao, gerenciador)
                                 break
                         else:
                             print("Modelo não encontrado, por favor tente novamente.")
@@ -286,10 +256,7 @@ if __name__ == "__main__":
                         model_chosen = input(f"Qual modelo de {brand_chosen} você deseja adquirir? \n")
                         for caminhao in Volvo:
                             if model_chosen.lower() == caminhao._modelo.lower():
-                                print(caminhao.exibir_informacoes())
-                                cliente.adquirir_veiculo(caminhao)
-                                gerenciador.adicionar_veiculo(caminhao)
-                                gerenciador.listar_veiculos()
+                                cliente.adquirir_veiculo(caminhao, gerenciador)
                                 break
                         else:
                             print("Modelo não encontrado, por favor tente novamente.")
@@ -303,10 +270,7 @@ if __name__ == "__main__":
                         model_chosen = input(f"Qual modelo de {brand_chosen} você deseja adquirir? \n")
                         for caminhao in Foton:
                             if model_chosen.lower() == caminhao._modelo.lower():
-                                print(caminhao.exibir_informacoes())
-                                cliente.adquirir_veiculo(caminhao)
-                                gerenciador.adicionar_veiculo(caminhao)
-                                gerenciador.listar_veiculos()
+                                cliente.adquirir_veiculo(caminhao, gerenciador)
                                 break
                         else:
                             print("Modelo não encontrado, por favor tente novamente.")
