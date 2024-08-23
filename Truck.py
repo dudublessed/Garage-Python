@@ -46,8 +46,8 @@ class Caminhao (Vehicles):
         print("_______________")
         print(" ")
         return (f"Informações do {self._modelo}: \n"
-                f"Marca: {self._marca} \n"
                 f" \n"
+                f"Marca: {self._marca} \n"
                 f"Fabricação: {self._ano} \n"
                 f"Combustível: {self._combustivel} litros \n"
                 f"Quilometragem: {self._quilometragem} km \n"

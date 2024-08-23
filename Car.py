@@ -47,14 +47,14 @@ Porsche = [
     Carro("Porsche","718 Cayman", 2024, 64, 0, 535000, 275),
     Carro("Porsche","911 Turbo", 2024, 64, 0, 1505000, 132),
     Carro("Porsche","Panamera 4 E-Hybrid", 2025, 75, 0, 803000, 495),
-    Carro("Porsche","Cayenne GTS", 2025, 0, 75, 930000, 600)
+    Carro("Porsche","Cayenne GTS", 2025, 0, 0, 930000, 600)
 ]
 
 Toyota = [
     # Marca / Modelo / Ano / Combustível / Quilometragem / Custo / Capacidade Mala
-    Carro("Toyota", "Corolla GLi", 2024, 50, 20.000, 130000, 470),
-    Carro("Toyota", "Hilux GR-Sport", 2024, 80, 20.000, 350000, 1200),
-    Carro("Toyota", "RAV4 SX Connect Hybrid", 2024, 55, 30.000, 310000, 580)
+    Carro("Toyota", "Corolla GLi", 2024, 50, 20, 130000, 470),
+    Carro("Toyota", "Hilux GR-Sport", 2024, 80, 20, 350000, 1200),
+    Carro("Toyota", "RAV4 SX Connect Hybrid", 2024, 55, 30000, 310000, 580)
 ]
 
 Ferrari = [
@@ -66,8 +66,8 @@ Ferrari = [
         
 Nissan = [
     # Marca / Modelo / Ano / Combustível / Quilometragem / Custo / Capacidade Mala
-    Carro("Nissan", "Kicks", 2024, 41, 40.000, 100000, 432),
-    Carro("Nissan", "Sentra", 2024, 50, 50.000, 120000, 500),
+    Carro("Nissan", "Kicks", 2024, 41, 40, 100000, 432),
+    Carro("Nissan", "Sentra", 2024, 50, 50, 120000, 500),
     Carro("Nissan", "Frontier", 2024, 80, 0, 270000, 1100)
 ]
 
@@ -80,7 +80,7 @@ Audi = [
 
 Hyundai = [
     # Marca / Modelo / Ano / Combustível / Quilometragem / Custo / Capacidade Mala
-    Carro("Hyundai", "Creta", 2024, 55, 30.000, 170000, 431),
-    Carro("Hyundai", "HB20", 2024, 50, 40.000, 70000, 300),
+    Carro("Hyundai", "Creta", 2024, 55, 30, 170000, 431),
+    Carro("Hyundai", "HB20", 2024, 50, 40, 70000, 300),
     Carro("Hyundai", "Palisade", 2024, 71, 0, 400000, 311)
 ]

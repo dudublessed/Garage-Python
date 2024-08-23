@@ -17,6 +17,7 @@ class Vehicles(ABC):
         consumo = (self._combustivel / self._quilometragem) * 100
         return consumo
 
+
     def calcular_autonomia(self):
         consumo = self.calcular_consumo()
         if consumo == 0:
@@ -31,6 +32,8 @@ class Vehicles(ABC):
         custo = (self._quilometragem / 100) * eficiencia * preco_combustivel
         return custo
     
+    def custo_veiculo(self):
+        return self._custo
     
     def exibir_informacoes(self):
         pass
